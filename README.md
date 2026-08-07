@@ -1,11 +1,24 @@
-# SingleColumnarTransposition
+# Single Columnar Transposition: Keyless Decryption
 
-Keyless decryption of Single columnar transposition ciphers.
+Encryption and **keyless** decryption of single columnar transposition ciphers, breaking the cipher without any prior knowledge of the key. Done as part of the PES C-ISFCR Summer Internship (Cryptography domain, 2021).
 
-Link to Paper
-https://ieeexplore.ieee.org/document/10083631
+## Published
 
-Citation :
+IEEE SMARTGENCON 2022: [Novel ways of decrypting transposition ciphers](https://ieeexplore.ieee.org/document/10083631)
 
-N. M. Adyapak, V. B and P. H. B, "A Novel Way of Decrypting Single Columnar Transposition Ciphers," 2022 International Conference on Smart Generation Computing, Communication and Networking (SMART GENCON), Bangalore, India, 2022, pp. 1-8, doi: 10.1109/SMARTGENCON56628.2022.10083631.
+## What it does
 
+- Encrypts plain text with a single columnar transposition cipher
+- Recovers the plain text from ciphertext without the key, using optimization over column permutations and dictionary matching
+
+## Run
+
+```bash
+python demo.py
+```
+
+Input is read from `input.txt` and results are written to the output files. See `LiteratureSurveyReport` and `Presentation` for the background and method.
+
+## Author
+
+Nikhil Adyapak - [portfolio](https://nikhiladyapak.github.io/)
